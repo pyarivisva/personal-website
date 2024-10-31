@@ -1,0 +1,97 @@
+/* General Styles */
+body {
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #F5FCFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5%;
+}
+
+header h1 {
+    font-size: 24pt;
+    color: #514769;
+}
+
+header #Portfolio {
+    color: #8A46F1;
+}
+
+nav {
+    color: #8A46F1;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 70px;
+    gap: 40px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.intro {
+    background-color: #F5FCFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+}
+
+.left-intro {
+    flex: 1;
+    padding: 20px;
+}
+
+.left-intro h1 {
+    font-size: 50px;
+    color: #514769;
+    margin-bottom: 15px;
+}
+
+.left-intro #name {
+    color: #8A46F1;
+}
+
+.left-intro p {
+    color: #514769;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.left-intro a {
+    text-decoration: none;
+}
+
+#icon img {
+    max-width: 8%;
+    height: auto;
+    margin-right: 8px;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #8A46F1;
+    color: #FFFAFF;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.right-intro {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.right-intro img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 50%;
+}

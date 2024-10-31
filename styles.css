@@ -1,0 +1,106 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #f4f4f8;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+header span {
+    color: #7d47df;
+}
+
+header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #7d47df;
+}
+
+.intro {
+    text-align: center;
+    padding: 50px 10%;
+    background-color: #f9f9ff;
+}
+
+.intro h2 {
+    font-size: 28px;
+}
+
+button {
+    background-color: #7d47df;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.experience,
+.portfolio,
+.about,
+.contact {
+    padding: 50px 10%;
+}
+
+h2 {
+    color: #7d47df;
+}
+
+.experience-cards,
+.portfolio-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #eae6f7;
+    padding: 20px;
+    border-radius: 8px;
+    width: 22%;
+    text-align: center;
+}
+
+.about {
+    text-align: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.contact input,
+.contact textarea {
+    padding: 10px;
+    width: 70%;
+    max-width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #7d47df;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
