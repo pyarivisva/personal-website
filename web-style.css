@@ -38,7 +38,6 @@ nav a {
 
 nav a:hover {
     color: #514769;
-    text-decoration: underline;
 }
 
 /* section intro */
@@ -304,4 +303,144 @@ button:hover {
     font-size: 20px;
     color: #514769;
     margin-bottom: 35px;
+}
+
+/* Section contact */
+#contact {
+    box-sizing: border-box;
+    background-color: #F5FCFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-bottom: 30px;
+}
+
+.contact-container {
+    width: 100%;
+    max-width: 1250px;
+    padding: 30px;
+    text-align: center;
+}
+
+.contact-header p {
+    font-size: 20px;
+    color: #514769;
+    margin-bottom: 0px;
+}
+
+.contact-header h1 {
+    font-size: 60px;
+    color: #8A46F1;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    width: auto;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #8A46F1;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #8A46F1;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+}
+
+.form-check {
+    display: flex;
+    align-items: left;
+    margin-bottom: 20px;
+}
+
+.form-check input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: #f0f4ff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    margin: 0 80px;
+    padding: 0 60px;
+}
+
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0px;
+}
+
+footer h1 {
+    font-size: 24pt;
+    color: #514769;
+}
+
+footer #Portfolio {
+    color: #8A46F1;
+}
+
+#footer-nav {
+    display: flex;
+    gap: 30px;
+    padding-right: 5px;
+}
+
+#footer-nav a {
+    font-size: 18px;
+    color: #8A46F1;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#footer-nav a:hover {
+    color: #514769;
+}
+
+.footer-line {
+    border: none;
+    border-top: 1px solid #887d99;
+    margin: 0;
+}
+
+.bottom-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+#footer-icon {
+    display: flex;
+    gap: 15px;
+}
+
+#footer-icon img {
+    width: 35px;
+    height: 35px;
+}
+
+#copyright {
+    font-size: 14px;
+    color: #9e5dff;
 }
