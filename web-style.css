@@ -269,3 +269,47 @@ button:hover {
     margin: 14px 0 40px;
     text-align: center;
 }
+
+/* Section about */
+#about {
+    background-color: #F5FCFF;
+    padding: 60px;
+}
+
+.top-about {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.left-about,
+.right-about {
+    flex: 1;
+    padding: 40px;
+}
+
+.left-about img {
+    max-width: 70%;
+    height: auto;
+}
+
+.right-about {
+    text-align: justify;
+    margin-top: 50px;
+}
+
+.right-about h1 {
+    font-size: 50px;
+    color: #8A46F1;
+}
+
+
+.right-about p {
+    font-size: 18px;
+    color: #514769;
+}
+
+.bottom-about {
+    margin-top: 20px;
+    text-align: center;
+}
