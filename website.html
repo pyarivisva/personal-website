@@ -9,7 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PyPortfolio</title>
     <link rel="stylesheet" href="web-style.css">
+    <!-- Font Poppins -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <!-- SwiperJS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
 </head>
 
@@ -97,6 +100,65 @@
     </section>
 
     <!-- section portfolio -->
+    <div id="portfolio">
+        <div class="top-port">
+            <h1>Check Out Some of the Portfolio</h1>
+        </div>
+
+        <div class="container swiper">
+            <div class="slider-wrapper">
+                <div class="card-list swiper-wrapper">
+                    <div class="card-item swiper-slide">
+                        <img src="/img/read&share.png" alt="Library Donation System" class="project-image">
+                        <h2 class="project-name">Library Donation System</h2>
+                        <p class="desc">A desktop application designed to manage and
+                            track book donations efficiently, supporting library
+                            collections and donor records.</p>
+                        <button class="show-more">Show More </button>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="/img/baki.png" alt="Baki Project" class="project-image">
+                        <h2 class="project-name">Baki Project</h2>
+                        <p class="desc">A mobile app designed with a user-friendly UI/UX to
+                            facilitate food transactions, aimed at reducing food waste
+                            through easy access to surplus food offers and donations.</p>
+                        <button class="show-more">Show More</button>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="/img/geo3d.png" alt="Geo3D-AR" class="project-image">
+                        <h2 class="project-name">Geo3D-AR</h2>
+                        <p class="desc">A mobile AR application designed to help
+                            high school students visualize and understand
+                            3D geometry concepts interactively, and
+                            engagement in learning mathematics.</p>
+                        <button class="show-more">Show More </button>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="/img/first-aid.png" alt="First Aid" class="project-image">
+                        <h2 class="project-name">First Aid</h2>
+                        <p class="desc">A user interface and experience design for
+                            a mobile app that guides users in providing first aid,
+                            with intuitive navigation and quick access to emergency instructions.</p>
+                        <button class="show-more">Show More </button>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="/img/iot 1.png" alt="IOT" class="project-image">
+                        <h2 class="project-name">Internet of Things Project</h2>
+                        <p class="desc">A project utilizing IoT technology to
+                            monitor and manage various devices and sensors,
+                            providing real-time data insights and automation capabilities.</p>
+                        <button class="show-more">Show More </button>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-slide-button swiper-button-prev"></div>
+                <div class="swiper-slide-button swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+    <!-- SwiperJS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

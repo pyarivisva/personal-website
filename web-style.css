@@ -89,6 +89,12 @@ button {
     padding: 10px 40px;
     border-radius: 8px;
     cursor: pointer;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    background-color: #514769;
+    color: #FFFAFF;
 }
 
 .right-intro {
@@ -194,4 +200,72 @@ button {
         grid-template-columns: 1fr;
         /* Satu kolom pada layar sangat kecil */
     }
+}
+
+/* portfolio section */
+#portfolio {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #F5FCFF;
+}
+
+.top-port h1 {
+    color: #8A46F1;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.slider-wrapper {
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 70px 55px;
+}
+
+.slider-wrapper .swiper-pagination-bullet {
+    background: #8A46F1;
+    height: 15px;
+    width: 15px;
+}
+
+.slider-wrapper .swiper-slide-button {
+    color: #8A46F1;
+    transition: 0.2s ease;
+}
+
+.slider-wrapper .swiper-slide-button:hover {
+    color: #514769;
+}
+
+.card-list .card-item {
+    color: #8A46F1;
+    width: 400px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    backdrop-filter: blur(30px);
+    background: rgba(138, 70, 241, 0.1);
+    border: 1px solid rgba(138, 70, 241, 0.2);
+}
+
+.card-list .card-item .project-image {
+    width: 150px;
+    height: 145px;
+    object-fit: contain;
+}
+
+.card-list .card-item .desc {
+    color: #514769;
+    margin: 14px 0 40px;
+    text-align: center;
 }
