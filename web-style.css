@@ -5,11 +5,12 @@ body {
     padding: 0;
 }
 
+/* header */
 header {
     background-color: #F5FCFF;
     display: flex;
     justify-content: space-between;
-    padding: 20px 5%;
+    padding: 5px 5%;
 }
 
 header h1 {
@@ -21,6 +22,7 @@ header #Portfolio {
     color: #8A46F1;
 }
 
+/* navbar */
 nav {
     color: #8A46F1;
     font-size: 18px;
@@ -34,7 +36,13 @@ nav a {
     text-decoration: none;
 }
 
-.intro {
+nav a:hover {
+    color: #514769;
+    text-decoration: underline;
+}
+
+/* section intro */
+#intro {
     background-color: #F5FCFF;
     display: flex;
     justify-content: space-between;
@@ -91,7 +99,99 @@ button {
 }
 
 .right-intro img {
-    max-width: 70%;
+    max-width: 60%;
     height: auto;
-    border-radius: 50%;
+    filter: drop-shadow(8px 8px 50px #8A46F1);
+}
+
+/* section experience */
+#experience {
+    background-color: #F5FCFF;
+    padding: 60px;
+}
+
+.top-content h1 {
+    color: #8A46F1;
+    text-align: center;
+    font-size: 50px;
+    margin: 15px;
+}
+
+.top-content p {
+    color: #514769;
+    text-align: center;
+    padding: 0px 300px 0px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 50px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 25px;
+    background-color: #B188FF;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-body h5 {
+    color: #FFFAFF;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+.card-body p {
+    color: #514769;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+}
+
+.view-more {
+    padding: 10px 25px;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+        /* Dua kolom pada layar lebih kecil */
+    }
+}
+
+@media (max-width: 480px) {
+    .card-container {
+        grid-template-columns: 1fr;
+        /* Satu kolom pada layar sangat kecil */
+    }
 }
