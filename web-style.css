@@ -274,12 +274,8 @@ button:hover {
 #about {
     background-color: #F5FCFF;
     padding: 60px;
-}
-
-.top-about {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
 }
 
 .left-about,
@@ -289,27 +285,23 @@ button:hover {
 }
 
 .left-about img {
-    max-width: 70%;
+    max-width: 80%;
     height: auto;
 }
 
 .right-about {
     text-align: justify;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .right-about h1 {
-    font-size: 50px;
+    font-size: 60px;
     color: #8A46F1;
+    margin-bottom: 15px;
 }
-
 
 .right-about p {
-    font-size: 18px;
+    font-size: 20px;
     color: #514769;
-}
-
-.bottom-about {
-    margin-top: 20px;
-    text-align: center;
+    margin-bottom: 35px;
 }
