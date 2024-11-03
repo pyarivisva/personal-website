@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experience Section with Table</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .education-table {
+      width: 60%;
+      background-color: #fff;
+      border-collapse: collapse;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .education-table td {
+      padding: 15px;
+      vertical-align: top;
+    }
+
+    .timeline-cell {
+      width: 50px;
+      position: relative;
+    }
+
+    .timeline-cell::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background-color: #ccc;
+      transform: translateX(-50%);
+    }
+
+    .bullet {
+      width: 12px;
+      height: 12px;
+      background-color: #6d6d6d;
+      border-radius: 50%;
+      margin: 5px auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .content-cell {
+      padding-left: 10px;
+    }
+
+    .education-header {
+      font-weight: bold;
+      color: #333;
+    }
+
+    .education-date {
+      color: #777;
+      font-size: 0.9em;
+    }
+
+    .education-description {
+      margin-top: 5px;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+
+  <table class="education-table">
+    <tr>
+      <td class="timeline-cell">
+        <div class="bullet"></div>
+      </td>
+      <td class="content-cell">
+        <div class="education-header">Sekolah Dasar (SD) Negeri 1 Denpasar</div>
+        <div class="education-date">2008 - 2014</div>
+        <div class="education-location">Denpasar, Bali</div>
+      </td>
+    </tr>
+    <tr>
+      <td class="timeline-cell">
+        <div class="bullet"></div>
+      </td>
+      <td class="content-cell">
+        <div class="education-header">Sekolah Menengah Pertama (SMP) Negeri 2 Denpasar</div>
+        <div class="education-date">2014 - 2017</div>
+        <div class="education-location">Denpasar, Bali</div>
+      </td>
+    </tr>
+    <tr>
+      <td class="timeline-cell">
+        <div class="bullet"></div>
+      </td>
+      <td class="content-cell">
+        <div class="education-header">Sekolah Menengah Atas (SMA) Negeri 3 Denpasar</div>
+        <div class="education-date">2017 - 2020</div>
+        <div class="education-location">Denpasar, Bali</div>
+      </td>
+    </tr>
+    <tr>
+      <td class="timeline-cell">
+        <div class="bullet"></div>
+      </td>
+      <td class="content-cell">
+        <div class="education-header">Sarjana Teknik Informatika - Universitas Udayana</div>
+        <div class="education-date">2020 - Sekarang</div>
+        <div class="education-description">
+          Saat ini sedang menempuh pendidikan di Universitas Udayana dengan fokus pada bidang Teknologi Informasi.
+        </div>
+      </td>
+    </tr>
+  </table>
+
+  <!-- 
+  <table class="experience-table">
+    <tr>
+      <td class="timeline-cell">
+        <div class="bullet"></div>
+      </td>
+      <td class="content-cell">
+        <div class="experience-header">Himpunan Mahasiswa Teknologi Informasi Universitas Udayana</div>
+        <div class="experience-date">Purnawaktu - 11 bln</div>
+        <div class="experience-location">Bali, Indonesia - Di lokasi</div>
+      </td>
+    </tr>
+    <tr>
+      <td class="timeline-cell">
+        <div class="bullet"></div>
+      </td>
+      <td class="content-cell">
+        <div class="experience-header">Staff of the Practicum Division</div>
+        <div class="experience-date">Jan 2024 - Saat ini • 11 bln</div>
+        <div class="experience-description">
+          As a staff member in the Practicum Division, I help manage practicum sessions in the Information Technology
+          department at Udayana University.
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="timeline-cell">
+        <div class="bullet"></div>
+      </td>
+      <td class="content-cell">
+        <div class="experience-header">Treasurer of IT-ESEGA 2024</div>
+        <div class="experience-date">Mar 2024 - Agu 2024 • 6 bln</div>
+        <div class="experience-description">
+          As treasurer, I am responsible for managing all financial expenditures and income.
+        </div>
+      </td>
+    </tr>
+  </table> -->
+
+</body>
+
+</html>

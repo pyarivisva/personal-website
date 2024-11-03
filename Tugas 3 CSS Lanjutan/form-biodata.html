@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!-- Bahasa Indonesia -->
+<html lang="id">
+
+<head>
+    <!-- metadata atau <meta> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title> -->
+    <title>Tugas Form Biodata</title>
+    <!-- <link> -->
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+
+<body>
+    <!-- Nama: Pyari Visvapujita Devi Dasi
+        NIM: 2305551069
+        Mata kuliah: Pemrograman Internet D -->
+
+    <!-- wrapper -->
+    <div class="wrapper">
+        <!-- HTML Grouping element -->
+        <div class="container">
+            <div class="form-wrapper">
+                <div class="picture-panel">
+                    <img src="picture-panel.png" alt="picture">
+                </div>
+
+                <form class="form-panel">
+                    <!--  HTML5 semantic elements <header> dan membuat bookmark-->
+                    <header id="form-top">
+                        <!-- HTML IDs -->
+                        <h1 id="main-header">
+                            Form Biodata
+                        </h1>
+                    </header>
+
+                    <!-- Menggunakan List -->
+                    <div class="notes">
+                        <h6>Catatan:</h6>
+                        <!-- Changing Box Behavior -->
+                        <p>Silakan isi <em>biodata</em> Anda dengan <strong>benar</strong>. Berikut adalah beberapa hal
+                            yang perlu diperhatikan:
+                        </p>
+                        <ol type="a">
+                            <li>Wajib mengisi semua kolom dengan benar.</li>
+                            <li>Pastikan email yang dimasukkan valid.</li>
+                        </ol>
+                    </div>
+
+                    <!-- <div> element -->
+                    <div class="row">
+                        <label for="name">Nama</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="row">
+                        <label for="date_of_birth">Tanggal Lahir</label>
+                        <input type="date" id="date_of_birth" name="date_of_birth" required>
+                    </div>
+
+                    <div class="row">
+                        <label for="gender">Jenis Kelamin</label>
+                        <div class="radio-group">
+                            <input type="radio" id="female" name="gender" value="Perempuan" required>
+                            <label for="female">Perempuan</label>
+                            <input type="radio" id="male" name="gender" value="Laki-Laki">
+                            <label for="male">Laki-Laki</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label for="lastEducation">Pendidikan Terakhir</label>
+                        <div class="education-table">
+                            <table>
+                                <tr>
+                                    <select id="education-id" name="education" required>
+                                        <option value="" disabled selected>Pilih Pendidikan</option>
+                                        <option value="sd">SD</option>
+                                        <option value="smp">SMP</option>
+                                        <option value="sma">SMA</option>
+                                        <option value="s1">S1</option>
+                                        <option value="s2">S2</option>
+                                        <option value="other">Lainnya</option>
+                                    </select>
+                                </tr>
+                                <tr><input type="text" name="institution1" placeholder="Institusi" required></tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label for="hobby">Hobi</label>
+                        <select id="hobby" name="hobby" required>
+                            <option value="" disabled selected>Pilih Hobi</option>
+                            <option value="swimming">Berenang</option>
+                            <option value="cooking">Memasak</option>
+                            <option value="reading">Membaca</option>
+                            <option value="dancing">Menari</option>
+                            <option value="lainnya">Lainnya</option>
+                        </select>
+                    </div>
+
+                    <div class="row">
+                        <label for="address">Alamat</label>
+                        <textarea id="address" name="address" required></textarea>
+                    </div>
+
+                    <div class="row">
+                        <label for="city">Kota</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+
+                    <div class="row">
+                        <label for="province">Provinsi</label>
+                        <input type="text" id="province" name="province" required>
+                    </div>
+
+                    <div class="row">
+                        <label for="country">Negara</label>
+                        <input type="text" id="country" name="country" required>
+                    </div>
+
+                    <div class="row">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+
+                    <div class="row">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="row">
+                        <label for="password">Password</label>
+                        <div class="password-wrapper">
+                            <input type="password" id="password" name="password" required>
+                            <!-- span element -->
+                            <span class="iconamoon--eye-off" id="toggle-password"></span>
+                        </div>
+                    </div>
+
+
+                    <div class="submit">
+                        <input type="submit" value="Submit">
+                        <!-- HTML Classes -->
+                        <h6 class="note"> Silakan tekan submit jika sudah mengisi seluruh form.</h6>
+                    </div>
+
+                    <!-- bookmark -->
+                    <div class="back-to-top-container">
+                        <a class="back-to-top" href="#form-top">Kembali ke atas</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- gambar data diri dengan float di css -->
+        <div class="image-frame">
+            <img src="data-diri.jpg" alt="Nama Mahasiswa">
+        </div>
+        <div class="clear"></div>
+    </div>
+</body>
+
+</html>

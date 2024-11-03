@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Personal Website">
+    <meta name="keyword" content="HTML,CSS,Javascript,Website">
+    <meta name="author" content="Pyari Visvapujita Devi Dasi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PyPortfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Poppins -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <!-- SwiperJS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+</head>
+
+<body>
+    <!-- header -->
+    <header id="header">
+        <h1>Py<span id="Portfolio">Portfolio</span></h1>
+        <div class="header-container">
+            <nav>
+                <a href="#header">Home</a>
+                <a href="#experience">Experience</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#about">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- section home intro -->
+    <section id="intro">
+        <div class="left-intro">
+            <h1>Hi, I'm <span id="name">Pyari Visvapujita Devi Dasi.</span></h1>
+            <p>An undergraduate student majoring in Information Technology at Udayana University</p>
+            <div id="icon">
+                <a href="https://www.linkedin.com/in/pyarivisvapujitadevidasi/" target="_blank">
+                    <img src="/icon/linkedin.png" alt="linkedin icon">
+                </a>
+                <a href="https://github.com/pyarivisva" target="_blank">
+                    <img src="/icon/github.png" alt="github icon">
+                </a>
+                <a href="https://www.instagram.com/pyaripujita/" target="_blank">
+                    <img src="/icon/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+            <a href="#contact">
+                <button><strong>Get in touch</strong></button>
+            </a>
+        </div>
+
+        <div class="right-intro">
+            <img src="/img/personal-photo.png" alt="pyari image">
+        </div>
+    </section>
+
+    <!-- section experience -->
+    <section id="experience">
+        <div class="top-content">
+            <h1>Experience</h1>
+            <p>Various experiences that reflect my commitment to the fields of technology,
+                business, and organizational leadership, with each role providing new
+                insights and skill development.</p>
+        </div>
+
+        <div class="card-container">
+            <div class="card">
+                <img src="/img/hima.JPG" alt="hmti-pic">
+                <div class="card-body">
+                    <h5 class="title">HMTI</h5>
+                    <p class="card-text">Staff of the Practicum Division
+                        at Himpunan Mahasiswa Teknologi Informasi</p>
+                    <div class="button-container">
+                        <button class="view-more"><strong>View More >> </strong></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/img/tecart.jpg" alt="tecart-pic">
+                <div class="card-body">
+                    <h5 class="title">Technology Artisan</h5>
+                    <p class="card-text">Staff of Business with Technology Division</p>
+                    <div class="button-container">
+                        <button class="view-more"><strong>View More >> </strong></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/img/osis.jpg" alt="osis-pic">
+                <div class="card-body">
+                    <h5 class="title">Osisma7</h5>
+                    <p class="card-text">Deputy Treasurer of OSIS SMAN 7 Denpasar</p>
+                    <div class="button-container">
+                        <button class="view-more"><strong>View More >> </strong></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section portfolio -->
+    <div id="portfolio">
+        <div class="top-port">
+            <h1>Check Out Some of the Portfolio</h1>
+        </div>
+
+        <div class="container swiper">
+            <div class="slider-wrapper">
+                <div class="card-list swiper-wrapper">
+                    <div class="card-item swiper-slide">
+                        <img src="/img/read&share.png" alt="Library Donation System" class="project-image">
+                        <h2 class="project-name">Library Donation System</h2>
+                        <p class="desc">A desktop application designed to manage and
+                            track book donations efficiently, supporting library
+                            collections and donor records.</p>
+                        <button class="show-more">Show More </button>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="/img/baki.png" alt="Baki Project" class="project-image">
+                        <h2 class="project-name">Baki Project</h2>
+                        <p class="desc">A mobile app designed with a user-friendly UI/UX to
+                            facilitate food transactions, aimed at reducing food waste
+                            through easy access to surplus food offers and donations.</p>
+                        <button class="show-more">Show More</button>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="/img/geo3d.png" alt="Geo3D-AR" class="project-image">
+                        <h2 class="project-name">Geo3D-AR</h2>
+                        <p class="desc">A mobile AR application designed to help
+                            high school students visualize and understand
+                            3D geometry concepts interactively, and
+                            engagement in learning mathematics.</p>
+                        <button class="show-more">Show More </button>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="/img/first-aid.png" alt="First Aid" class="project-image">
+                        <h2 class="project-name">First Aid</h2>
+                        <p class="desc">A user interface and experience design for
+                            a mobile app that guides users in providing first aid,
+                            with intuitive navigation and quick access to emergency instructions.</p>
+                        <button class="show-more">Show More </button>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="/img/iot 1.png" alt="IOT" class="project-image">
+                        <h2 class="project-name">Internet of Things Project</h2>
+                        <p class="desc">A project utilizing IoT technology to
+                            monitor and manage various devices and sensors,
+                            providing real-time data insights and automation capabilities.</p>
+                        <button class="show-more">Show More </button>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="/img/prognet.png" alt="prognet" class="project-image">
+                        <h2 class="project-name">Pemrograman Internet Project</h2>
+                        <p class="desc">A foundational HTML and CSS project focused on creating a structured, responsive
+                            web form that captures essential user details, including personal information, contact
+                            details, etc.</p>
+                        <button class="show-more">Show More </button>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-slide-button swiper-button-prev"></div>
+                <div class="swiper-slide-button swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+    <!-- SwiperJS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- section about -->
+    <section id="about">
+        <div class="left-about">
+            <img src="/img/about-pic.png" alt="personal-pic">
+        </div>
+        <div class="right-about">
+            <h1>About Me</h1>
+            <p>I'm an Information Technology student at Udayana University with a strong foundation in MySQL
+                database
+                management, Java OOP, and IoT project experience. I'm passionate about contributing to innovative
+                tech
+                projects and eager to collaborate on opportunities that drive growth and learning. Let's connect to
+                discuss tech trends, projects, or career opportunities!</p>
+            <a href="/doc/CV_Pyari Visvapujita Devi Dasi.pdf" target="_blank">
+                <button><strong>Curriculum Vitae</strong></button>
+            </a>
+        </div>
+    </section>
+
+    <!-- Section contact -->
+    <section id="contact">
+        <div class="contact-container">
+            <div class="contact-header">
+                <p>Get in Touch</p>
+                <h1>Contact Me</h1>
+            </div>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="first-name">Name</label>
+                    <input type="text" id="first-name" name="first-name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Type your message..."></textarea>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" id="terms" name="terms">
+                    <label for="terms">I accept the terms</label>
+                </div>
+                <!-- button with modal -->
+                <a href="#modal" class="submit">Submit</a>
+                <!-- modal -->
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <a href="#contact" class="close" onclick="resetForm()">&times;</a>
+                        <h2>Message sent</h2>
+                        <p>This is a simulation; your message was not actually sent.</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="top-row">
+                <div class="logo">
+                    <h1>Py<span id="Portfolio">Portfolio</span></h1>
+                </div>
+                <nav id="footer-nav">
+                    <a href="#header">Home</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+
+            <hr class="footer-line">
+
+            <div class="bottom-row">
+                <div id="footer-icon">
+                    <a href="https://www.linkedin.com/in/pyarivisvapujitadevidasi/" target="_blank">
+                        <img src="/icon/linkedin.png" alt="linkedin icon">
+                    </a>
+                    <a href="https://github.com/pyarivisva" target="_blank">
+                        <img src="/icon/github.png" alt="github icon">
+                    </a>
+                    <a href="https://www.instagram.com/pyaripujita/" target="_blank">
+                        <img src="/icon/instagram.png" alt="instagram icon">
+                    </a>
+                </div>
+                <div id="copyright" <p>Copyright © 2024 All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
