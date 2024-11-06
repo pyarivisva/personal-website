@@ -285,6 +285,7 @@ nav a:hover {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    color: #FFFAFF;
     background-color: rgba(0, 0, 0, 0.5);
     color: F5FCFF;
     border: none;
@@ -640,6 +641,29 @@ footer #Portfolio {
     background-color: #F5FCFF;
 }
 
+.experience {
+    display: none;
+}
+
+.portfolio {
+    display: none;
+}
+
+.btn-content {
+    background-color: #7d46cf;
+    color: #FFFAFF;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btn-content:hover {
+    background-color: #514769;
+    color: #FFFAFF;
+}
+
 .top h1 {
     color: #7d46cf;
     text-align: center;
@@ -693,7 +717,6 @@ footer #Portfolio {
     align-items: center;
     justify-content: space-between;
     padding: 2rem;
-
 }
 
 .left-port {

@@ -1,3 +1,19 @@
+// Pindah halaman experience
+const params = new URLSearchParams(window.location.search);
+const item = params.get("item"); // Ambil nilai 'item' dari URL
+
+// Sembunyikan semua konten pengalaman
+const experiences = document.querySelectorAll(".experience, .portfolio");
+
+if (item) {
+  const experienceDiv = document.getElementById(item); // Ambil div dengan ID yang sesuai
+  if (experienceDiv) {
+    experienceDiv.style.display = "block"; // Tampilkan konten yang relevan
+  } else {
+    document.getElementById("not-found").style.display = "block"; // Tampilkan pesan tidak ditemukan
+  }
+}
+
 // navbar
 const scrollToHome = document.querySelectorAll(".scroll-to-home");
 
@@ -45,30 +61,6 @@ scrollToContact.addEventListener("click", function () {
     behavior: "smooth",
   });
 });
-
-// Pindah halaman experience
-const params = new URLSearchParams(window.location.search);
-const item = params.get("item"); // Ambil nilai 'item' dari URL
-
-// Sembunyikan semua konten pengalaman
-const experiences = document.querySelectorAll(".experience, .portfolio");
-experiences.forEach((exp) => {
-  if (
-    exp.classList.contains("experience") ||
-    exp.classList.contains("portfolio")
-  )
-    exp.style.display = "none"; // Sembunyikan semua pengalaman
-});
-
-// Tampilkan konten berdasarkan parameter
-if (item) {
-  const experienceDiv = document.getElementById(item); // Ambil div dengan ID yang sesuai
-  if (experienceDiv) {
-    experienceDiv.style.display = "block"; // Tampilkan konten yang relevan
-  } else {
-    document.getElementById("not-found").style.display = "block"; // Tampilkan pesan tidak ditemukan
-  }
-}
 
 // Slider portfolio
 document.addEventListener("DOMContentLoaded", () => {
