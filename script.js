@@ -1,25 +1,26 @@
-// Pindah halaman experience
+// Pindah halaman
 const params = new URLSearchParams(window.location.search);
 const item = params.get("item"); // Ambil nilai 'item' dari URL
 
-// Sembunyikan semua konten pengalaman
+// Sembunyikan semua experience dan portfolio terlebih dahulu
 const experiences = document.querySelectorAll(".experience, .portfolio");
 
 if (item) {
-  const experienceDiv = document.getElementById(item); // Ambil div dengan ID yang sesuai
+  const experienceDiv = document.getElementById(item); // Cocokkan id item
   if (experienceDiv) {
-    experienceDiv.style.display = "block"; // Tampilkan konten yang relevan
+    experienceDiv.style.display = "block"; // Tampilkan konten yang relevan sesuai id item
   } else {
-    document.getElementById("not-found").style.display = "block"; // Tampilkan pesan tidak ditemukan
+    document.getElementById("not-found").style.display = "block";
   }
 }
 
-// navbar
+// Navbar scroll
 const scrollToHome = document.querySelectorAll(".scroll-to-home");
 
+// Tambahkan event listener untuk setiap tombol 'scroll-to-home'
 scrollToHome.forEach((button) => {
   button.addEventListener("click", function () {
-    document.getElementById("header").scrollIntoView({
+    document.getElementById("intro").scrollIntoView({
       behavior: "smooth",
     });
   });
@@ -68,8 +69,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const cardItems = document.querySelectorAll(".card-item");
   const cardWidth = cardItems[0].offsetWidth; // Ambil lebar satu card
   const cardsVisible = 3; // Jumlah card yang terlihat pada satu waktu
-  const totalCards = cardItems.length;
-  let currentIndex = 0;
+  const totalCards = cardItems.length; // Total jumlah card dalam slider
+  let currentIndex = 0; // Indeks card yang sedang ditampilkan
 
   const prevButton = document.querySelector(".prev-btn");
   const nextButton = document.querySelector(".next-btn");
@@ -77,14 +78,14 @@ document.addEventListener("DOMContentLoaded", () => {
   if (prevButton && nextButton) {
     prevButton.addEventListener("click", () => {
       if (currentIndex > 0) {
-        currentIndex--;
+        currentIndex--; // Pindah ke card sebelumnya
         updateSliderPosition();
       }
     });
 
     nextButton.addEventListener("click", () => {
       if (currentIndex < totalCards - cardsVisible) {
-        currentIndex++;
+        currentIndex++; // Pindah ke card berikutnya
         updateSliderPosition();
       }
     });
@@ -93,22 +94,22 @@ document.addEventListener("DOMContentLoaded", () => {
   function updateSliderPosition() {
     // Geser slider sebesar lebar satu card kali index saat ini
     const offset = -currentIndex * cardWidth;
-    sliderWrapper.style.transform = `translateX(${offset}px)`;
+    sliderWrapper.style.transform = `translateX(${offset}px)`; // Geser slider
   }
 
   // Pastikan slider berada di posisi awal yang benar
   updateSliderPosition();
 });
 
-// reset form di contact section
+// Reset form di contact section
 function resetForm() {
   document.querySelector(".contact-form").reset();
 }
 
-// Ambil elemen tombol
+// Tampilkan tombol scroll ke atas
 const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
-// Tampilkan tombol ketika scroll melewati 100px
+// Tampilkan tombol 'scrollToTopBtn' ketika scroll melewati 100px
 window.onscroll = function () {
   if (
     document.body.scrollTop > 100 ||
@@ -120,7 +121,7 @@ window.onscroll = function () {
   }
 };
 
-// Fungsi scroll ke atas
+// Menambahkan event listener untuk klik pada tombol scroll ke atas
 scrollToTopBtn.addEventListener("click", function () {
   window.scrollTo({
     top: 0,

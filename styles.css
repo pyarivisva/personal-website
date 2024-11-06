@@ -6,11 +6,11 @@ body {
     background-color: #F5FCFF;
 }
 
-/* header */
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
-    padding: 5px 5%;
+    padding: 0px 5%;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -43,9 +43,11 @@ nav a {
 
 nav a:hover {
     color: #514769;
+    background-color: #e8e3ee;
+    border-radius: 8px;
 }
 
-/* section intro */
+/* section home intro */
 #intro {
     display: flex;
     justify-content: space-between;
@@ -181,7 +183,6 @@ nav a:hover {
 
 .button-container {
     display: flex;
-    justify-content: left;
     gap: 10px;
     margin-top: 5px;
 }
@@ -215,7 +216,7 @@ nav a:hover {
     }
 }
 
-/* portfolio section */
+/* section portfolio */
 #portfolio {
     margin: 0;
     padding: 0;
@@ -419,11 +420,6 @@ nav a:hover {
     z-index: 1;
 }
 
-.content-cell {
-    padding-left: 10px;
-    width: 150px;
-}
-
 .education-header {
     font-weight: bold;
     color: #333;
@@ -529,13 +525,10 @@ nav a:hover {
     justify-content: center;
 }
 
-/* Display modal when targeted */
 .modal:target {
     display: flex;
-    /* Show modal on click */
 }
 
-/* Modal content box */
 .modal-content {
     background: #fff;
     padding: 20px;
@@ -546,7 +539,6 @@ nav a:hover {
     position: relative;
 }
 
-/* Close button */
 .close {
     position: absolute;
     top: 10px;
@@ -770,7 +762,6 @@ footer #Portfolio {
     position: relative;
     padding-bottom: 56.25%;
     height: 0;
-    overflow: hidden;
     overflow: hidden;
     border-radius: 15px;
 }
